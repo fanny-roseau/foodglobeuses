@@ -1,4 +1,38 @@
 Rails.application.routes.draw do
+
+  get 'articles/show'
+
+  ActiveAdmin.routes(self)
+
+  devise_for :users
+
+  root to: 'pages#home'
+
+  get 'about', to: 'pages#about'
+
+  get 'contact', to: 'pages#contact'
+
+  resources :restaurants do
+    resources :articles, only: [:show]
+    collection do
+      get 'amsterdam', to: "restaurants#amsterdam"
+      get 'barcelone', to: "restaurants#barcelone"
+      get 'berlin', to: "restaurants#berlin"
+      get 'cap-ferret', to: "restaurants#cap_ferret"
+      get 'hanoi', to: "restaurants#hanoi"
+      get 'jerusalem', to: "restaurants#jerusalem"
+      get 'lisbonne', to: "restaurants#lisbonne"
+      get 'londres', to: "restaurants#londres"
+      get 'los-angeles', to: "restaurants#los_angeles"
+      get 'marrakech', to: "restaurants#marrakech"
+      get 'montreal', to: "restaurants#montreal"
+      get 'new-york', to: "restaurants#new_york"
+      get 'paris', to: "restaurants#paris"
+      get 'piana', to: "restaurants#piana"
+      get 'tel-aviv', to: "restaurants#tel_aviv"
+    end
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,33 @@
+#contact {
+
+.btn-default {
+background-color: #ff918e;
+color: white;
+border-radius:0%;
+border:none;
+font-family: "Open Sans";
+font-weight:500;
+font-size:13px;
+}
+
+label {
+font-family: "Open Sans";
+font-weight:400;
+color: #666666;
+font-size:13px;
+}
+
+textarea {
+   resize: none;
+}
+
+input, textarea, button {
+outline: none;
+box-shadow:none !important;
+
+&:focus {
+  border: 1px solid #ccc !important;
+}
+}
+
+}

@@ -1,0 +1,17 @@
+<div class="col-xs-12 col-md-8">
+  <div class="row">
+    <% @restaurants.each do |restaurant| %>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="white-box">
+          <%= link_to restaurant_article_path(restaurant.id, restaurant.article)  do %>
+            <div class="container-pola">
+              <%= image_tag restaurant.picture, id:"pola" %>
+            </div>
+          <% end %>
+          <p class="restaurant"><%= restaurant.name %></p>
+          <p class="city"><strong><%= restaurant.city %></strong></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

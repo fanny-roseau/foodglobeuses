@@ -1,0 +1,131 @@
+<div class="col-xs-12 col-md-8">
+  <div class="article">
+    <span><%= (l(@article.publication, format: :custom)).to_s.upcase %></span>
+    <h1 class="text-center"> <%= @article.restaurant.name %></h1>
+    <hr>
+    <div class="row">
+
+      <% if @article.picture5.exists? %>
+
+        <div class="col-xs-12">
+          <%= image_tag @article.picture1, class: "article-img" %>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <%= image_tag @article.picture2, class: "article-img" %>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <%= image_tag @article.picture3, class: "article-img" %>
+        </div>
+
+      <% elsif @article.picture4.exists? %>
+
+        <div class="col-xs-12 col-md-6">
+          <%= image_tag @article.picture1, class: "article-img" %>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <%= image_tag @article.picture2, class: "article-img" %>
+        </div>
+
+      <% elsif @article.picture3.exists? %>
+
+        <div class="col-xs-12">
+          <%= image_tag @article.picture1, class: "article-img" %>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <%= image_tag @article.picture2, class: "article-img" %>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <%= image_tag @article.picture3, class: "article-img" %>
+        </div>
+
+      <% elsif @article.picture2.exists? %>
+
+        <div class="col-xs-12 col-md-6">
+          <%= image_tag @article.picture1, class: "article-img" %>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <%= image_tag @article.picture2, class: "article-img" %>
+        </div>
+
+      <% else %>
+
+        <div class="col-xs-12">
+          <%= image_tag @article.picture1, class: "article-img" %>
+        </div>
+
+      <% end %>
+
+    </div>
+
+    <p class="text">
+      <%= @article.description %>
+    </p>
+
+    <p class="text">N’oubliez pas les feedback, l’interactivité dans la blogosphère c’est encore mieux!</p>
+
+    <p class="text">M&L</p>
+
+  </div>
+
+  <% if @article.picture5.exists? %>
+
+    <div class="col-xs-12 col-md-6">
+      <%= image_tag @article.picture4, class: "article-img" %>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <%= image_tag @article.picture5, class: "article-img" %>
+    </div>
+
+  <% elsif @article.picture4.exists? %>
+
+    <div class="col-xs-12 col-md-6">
+      <%= image_tag @article.picture3, class: "article-img" %>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <%= image_tag @article.picture4, class: "article-img" %>
+    </div>
+
+  <% end %>
+
+  <br>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <div class="infos">
+        <p>
+          <i class="fa fa-map-marker"></i> <%= @article.restaurant.address %>
+        </p>
+      <br>
+        <p>
+          <i class="fa fa-clock-o"></i> <%= @article.restaurant.opening_hours %>
+        </p>
+      <br>
+        <p>
+          <i class="fa fa-phone"></i> <%= @article.restaurant.phone %>
+        </p>
+      <br>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+      <div id="map" style="width: 100%; height: 400px;"></div>
+
+        <% content_for(:after_js) do %>
+
+          <%= javascript_tag do %>
+            $(document).on('ready', function() {
+              handler = Gmaps.build('Google');
+              handler.buildMap({ internal: { id: 'map' } }, function(){
+                markers = handler.addMarkers(<%= raw @markers.to_json %>);
+                handler.bounds.extendWith(markers);
+                handler.fitMapToBounds();
+              });
+            })
+          <% end %>
+        <% end %>
+
+    </div>
+
+  </div>
+
+  </div>

@@ -1,0 +1,292 @@
+.side-bar {
+  float: right;
+
+  p {
+    text-align:justify;
+    font-family: $my-font;
+    font-size: 12px;
+  }
+}
+
+.widget-title {
+  background: #f2f2f2;
+  color: #666666;
+  text-transform: uppercase;
+  padding: 12px 14px;
+}
+
+.img-about {
+  width: 173px;
+  height:173px;
+  border-radius: 100%;
+  display: block;
+  margin: 20px auto;
+}
+
+.link {
+  font-family: "Open Sans";
+  font-weight: 100;
+  letter-spacing: 2px;
+  line-height: 48px;
+  font-size: 11px;
+  color: black;
+  text-transform: uppercase;
+
+  &:hover {
+  color: #fd928c;
+  text-decoration:none; }
+
+}
+
+.social-sidebar {
+  text-align: center;
+}
+.social-sidebar-img {
+  width: 52px;
+  height: 52px;
+  margin-right: -11px;
+  margin-bottom: -10px;
+}
+
+#search {
+  line-height: 16px;
+  border: 1px solid #bababb;
+  outline:none;
+  display: block;
+  margin: 0 auto;
+  padding: 6px 28px;
+  margin-bottom:-20px;
+}
+
+#searchsubmit {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background: url(../../images/search_btn.png);
+  border:none;
+}
+
+.img-instagram {
+width: 78.6563px;
+height: 78.6563px;
+}
+
+.instagram {
+  text-align: center;
+
+  li {
+    margin-bottom: 5px;
+    margin-right: -11px;
+
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+#searchsubmit {
+  right: -210px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 995px) {
+#searchsubmit {
+  right: -177px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 995px) and (min-width: 750px) {
+#searchsubmit {
+  right: -439px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 750px) and (min-width: 740px) {
+#searchsubmit {
+  right: -437px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 740px) and (min-width: 730px) {
+#searchsubmit {
+  right: -435px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 730px) and (min-width: 720px) {
+#searchsubmit {
+  right: -427px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 720px) and (min-width: 710px) {
+#searchsubmit {
+  right: -422px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 710px) and (min-width: 700px) {
+#searchsubmit {
+  right: -420px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 700px) and (min-width: 690px) {
+#searchsubmit {
+  right: -411px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 690px) and (min-width: 685px) {
+#searchsubmit {
+  right: -408px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 685px) and (min-width: 655px) {
+#searchsubmit {
+  right: -396px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 655px) and (min-width: 635px) {
+#searchsubmit {
+  right: -380px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 635px) and (min-width: 615px) {
+#searchsubmit {
+  right: -370px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 615px) and (min-width: 595px) {
+#searchsubmit {
+  right: -360px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 595px) and (min-width: 575px) {
+#searchsubmit {
+  right: -350px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 575px) and (min-width: 555px) {
+#searchsubmit {
+  right: -340px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 555px) and (min-width: 535px) {
+#searchsubmit {
+  right: -330px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 535px) and (min-width: 515px) {
+#searchsubmit {
+  right: -320px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 515px) and (min-width: 475px) {
+#searchsubmit {
+  right: -310px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 475px) and (min-width: 455px) {
+#searchsubmit {
+  right: -290px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 455px) and (min-width: 435px) {
+#searchsubmit {
+  right: -280px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 435px) and (min-width: 415px) {
+#searchsubmit {
+  right: -270px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 415px) and (min-width: 395px) {
+#searchsubmit {
+  right: -266px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 395px) and (min-width: 370px) {
+#searchsubmit {
+  right: -253px;
+  top: -4px;
+}
+
+}
+
+@media only screen and (max-width: 370px) {
+#searchsubmit {
+  right: -247px;
+  top: -4px;
+}
+
+}
+
+
+
+
+
+
+
+
+

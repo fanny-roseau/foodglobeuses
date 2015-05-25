@@ -12,5 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require bootstrap-sprockets
+//= require underscore
+//= require gmaps/google
+//= require all
+//= require vendor/owl.carousel.min.js
+//= require vendor/jquery.twbsPagination.min.js
+
+
+
+
