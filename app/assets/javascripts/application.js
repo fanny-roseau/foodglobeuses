@@ -17,7 +17,8 @@
 //= require gmaps/google
 //= require all
 //= require vendor/owl.carousel.min.js
-//= require vendor/jquery.twbsPagination.min.js
+
+
 
 
 

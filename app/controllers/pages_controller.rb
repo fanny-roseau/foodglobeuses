@@ -1,8 +1,6 @@
 class PagesController < ApplicationController
   def home
-  end
-
-  def contact
+    @articles = Article.all.order("publication DESC").paginate(:page => params[:page], :per_page => 4, total_entries: 20)
   end
 
   def about

@@ -48,7 +48,7 @@ class RestaurantsController < ApplicationController
   end
 
   def paris
-    @restaurants = Restaurant.where(city: "Paris")
+    @restaurants = Restaurant.where(city: "Paris").paginate(:page => params[:page], :per_page => 9, total_entries: 18)
   end
 
   def piana

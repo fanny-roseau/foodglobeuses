@@ -40,25 +40,5 @@ $(document).ready(function($) {
 
     });
 
-     $('#page-selection').twbsPagination({
-            totalPages: 5,
-            visiblePages: 5,
-            first: false,
-            last: false,
-            prev: '<<',
-            next: '>>',
-            href: 'page{{number}}.html'
-      });
-
-     $('#page-selection-paris').twbsPagination({
-            totalPages: 2,
-            visiblePages: 5,
-            first: false,
-            last: false,
-            prev: '<<',
-            next: '>>',
-            href: 'paris-page{{number}}.html'
-      });
-
 
   });

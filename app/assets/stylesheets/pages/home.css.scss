@@ -101,14 +101,6 @@
 
 }
 
-.posts {
-
-  .col-xs-6 {
-  width: 50%;
-  height: 417px;
-}
-
-}
 
 .posts-title {
   text-align:center;
@@ -129,54 +121,71 @@
     font-family: "Open Sans";
     font-size: 13px;
   }
+
+  h4 {
+    text-transform: capitalize;
+    font-family: "Open Sans";
+    letter-spacing: 2px;
+    line-height: 11px;
+    font-size: 11px;
+    font-weight: 200;
+    color:black;
+  }
 }
 
 .post {
 
-  margin-bottom:20px;
+  .col-sm-6 {
+    height:415px;
+  }
 
 }
 
 .date {
-  font-size: 13px;
+  font-size: 12px;
   color: #999;
   letter-spacing: 1px;
   font-style: italic;
+  margin-bottom: 20px;
 }
 
 .pagination {
-  float:right;
-  margin-right: 12px;
+  clear:both;
+  float: right;
+  position: relative;
+  padding-left: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 26px;
+  margin-bottom: 60px;
+
+  a {
+    font-family: "Open Sans";
+    text-decoration: none;
+    color: #58595b;
+    background-color: #fff;
+    border: 1px solid #58595b;
+    padding: 6px 9px 6px 9px;
+    margin: 3px;
+    }
+
+  .current {
+    font-family: "Open Sans";
+    color: #fd928c;
+    background-color: white;
+    border: 1px solid #58595b;
+    font-weight: bold;
+    padding: 6px 9px 6px 9px;
+    margin: 3px;
+    font-style: normal;
   }
 
-.pagination > li > a, .pagination > li > span {
-  position: relative;
-  float: left;
-  padding: 6px 12px;
-  line-height: 1.428571429;
-  text-decoration: none;
-  color: black;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  margin-left: 5px;
-}
+  .disabled {
+    display:none;
+  }
+  }
 
-.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
-  z-index: 2;
-  color: #fd928c;
-  background-color: white;
-  border-color: #ddd;
-  cursor: default;
-}
 
-.pagination > li:first-child > a, .pagination > li:first-child > span {
-  border-bottom-left-radius: 0px;
-  border-top-left-radius: 0px;
-}
 
-.pagination > li:last-child > a, .pagination > li:last-child > span {
-  border-bottom-right-radius: 0px;
-  border-top-right-radius: 0px;
-}
 
 

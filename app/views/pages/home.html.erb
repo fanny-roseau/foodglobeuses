@@ -22,16 +22,16 @@
               <p class="city"><strong>Paris</strong></p>
             </div>
         </div>
-       <div class="item">
-            <div class="white-box">
-              <%= link_to root_path do %>
-                <div class="container-pola">
-                  <%= image_tag "soya.png", id:"pola" %>
-                </div>
-              <% end %>
-              <p class="restaurant">Soya</p>
-              <p class="city"><strong>Paris</strong></p>
-            </div>
+        <div class="item">
+          <div class="white-box">
+            <%= link_to root_path do %>
+              <div class="container-pola">
+                <%= image_tag "soya.png", id:"pola" %>
+              </div>
+            <% end %>
+            <p class="restaurant">Soya</p>
+            <p class="city"><strong>Paris</strong></p>
+          </div>
         </div>
         <div class="item">
             <div class="white-box">
@@ -135,12 +135,29 @@
       </div>
     </div>
 
-
-
-      <div id="page-selection">
+    <div class="col-xs-12 col-md-8">
+      <h3 class="posts-title">LATEST POSTS</h3>
+      <div class="row">
+        <% @articles.each do |article| %>
+          <div class="post">
+            <div class="col-xs-12 col-sm-6">
+              <%= image_tag article.restaurant.picture, class: "picture-post" %>
+              <div class="content">
+                <%= link_to restaurant_article_path(article.restaurant.id, article) do %>
+                  <h4><%= article.restaurant.name %>, <%= article.restaurant.city %> </h4>
+                <% end %>
+                <p><%= article.description.split[0..60].join(" ")%>...</p>
+                <div class="date">
+                  <span><%= (l(article.publication, format: :custom)).to_s.capitalize %></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+        <%= will_paginate @articles, :previous_label => "<<", :next_label => ">>" %>
       </div>
-
     </div>
+
 
 
 

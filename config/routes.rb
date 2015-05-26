@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'articles/show'
-
   ActiveAdmin.routes(self)
 
   devise_for :users
@@ -10,7 +8,7 @@ Rails.application.routes.draw do
 
   get 'about', to: 'pages#about'
 
-  get 'contact', to: 'pages#contact'
+  resources :contacts, only: [:new, :create]
 
   resources :restaurants do
     resources :articles, only: [:show]
@@ -31,7 +29,9 @@ Rails.application.routes.draw do
       get 'piana', to: "restaurants#piana"
       get 'tel-aviv', to: "restaurants#tel_aviv"
     end
+
   end
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

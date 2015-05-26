@@ -4,7 +4,7 @@
 background-color: #ff918e;
 color: white;
 border-radius:0%;
-border:none;
+border: 1px solid #ff918e;
 font-family: "Open Sans";
 font-weight:500;
 font-size:13px;
@@ -19,15 +19,35 @@ font-size:13px;
 
 textarea {
    resize: none;
+   border-radius:4px;
+   width:100%;
+   border: 1px solid #ccc;
+   margin-bottom: 10px;
 }
 
-input, textarea, button {
+.input .string {
+  width:100%;
+}
+
+input {
+  border-radius:4px;
+  border: 1px solid #ccc
+}
+
+input, button, textarea {
 outline: none;
 box-shadow:none !important;
 
 &:focus {
   border: 1px solid #ccc !important;
+  outline: none;
+  box-shadow:none !important;
 }
 }
 
+}
+
+label {
+  margin-top:10px;
+  margin-bottom:10px;
 }
