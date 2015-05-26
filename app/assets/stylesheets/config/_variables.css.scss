@@ -2,38 +2,11 @@
  * Fonts
  * ------------------------------------- */
 // Google fonts
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
-@import url(http://fonts.googleapis.com/css?family=League+Script|Yesteryear|Engagement|Reenie+Beanie|Cedarville+Cursive|Dawning+of+a+New+Day);
 
-@font-face {
-font-family: "Little Blue Jay";
-src: font-url('LittleBlueJay.ttf') format('truetype');
 
-}
 
 
 $my-font: "Open Sans";
-
-body {
-    -webkit-animation-delay: 0.1s;
-    -webkit-animation-name: fontfix;
-    -webkit-animation-duration: 0.1s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: linear;
-}
-
-@-webkit-keyframes fontfix {
-    from { opacity: 1; }
-    to   { opacity: 1; }
-}
-
-<script type="text/javascript">
-jQuery(function($) {
-    if (/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())) {
-        $('body').css('opacity', '1.0')
-    }
-})
-</script>
 
 
 
