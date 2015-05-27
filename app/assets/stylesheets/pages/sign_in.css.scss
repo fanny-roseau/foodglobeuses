@@ -1,7 +1,6 @@
 .sign-in {
   margin-top: 137px;
 
-
   .form {
     border-radius: 5px;
     border: 4px solid #fd928c;
@@ -15,14 +14,14 @@
 
   }
 
-
   #user_email {
 
     background: #fbfbfb;
     box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
     border: 1px solid #ddd;
-    font-size: 24px;
     width: 100%;
+    font-size: 12px;
+    padding: 10px;
 
     &:focus {
     border: 1px solid #ccc !important;
@@ -36,8 +35,9 @@
     background: #fbfbfb;
     box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
     border: 1px solid #ddd;
-    font-size: 24px;
     width: 100%;
+    font-size: 12px;
+    padding: 10px;
 
     &:focus {
     border: 1px solid #ccc !important;
@@ -46,13 +46,12 @@
     }
   }
 
-  .logo-sign-in {
-  width: 284px;
-  height: 123px;
+ .logo {
+  width: 294px;
+  height: 162px;
   position: relative;
-  left: 22px;
-
-  }
+  left: 18px;
+ }
 
   label {
   color: #777;
