@@ -16,6 +16,8 @@
 
   <%= render "shared/flashes" %>
 
+  <% if current_page?('/users/sign_in') == false && current_page?('/users/password/new') == false %>
+
     <header>
       <div class="container">
         <div class="row">
@@ -122,11 +124,13 @@
         </ul>
       </div>
       <h4 class="widget-title">Recherche</h4>
-      <div>
-      <form>
-        <input type="search" id="search">
-        <input type="submit" value="" id="searchsubmit">
-      </form>
+      <div id="search">
+      <%= form_tag(articles_path, method: :get, class: "form-inline") do %>
+        <div class="wrapper">
+          <input type="text" name="search">
+          <button><i class="fa fa-search"></i></button>
+        </div>
+      <% end %>
       </div>
       <h4 class="widget-title">Instagram</h4>
       <ul class="list-inline instagram">
@@ -204,6 +208,10 @@
     </div>
   </div>
 </div>
+
+<% else %>
+  <%= yield %>
+<% end %>
 
   <%= javascript_include_tag "https://maps.google.com/maps/api/js?sensor=false" %>
   <%= javascript_include_tag "https://google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js" %>

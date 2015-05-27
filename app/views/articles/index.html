@@ -1,0 +1,27 @@
+<div class="col-xs-12 col-md-8">
+  <h3 class="text-center">Résultats de votre recherche pour: <%= @search %></h3>
+  <% if @articles.empty? %>
+    <div class="row">
+    <div class="col-xs-12">
+    <div class="empty">
+      <hr>
+      <p><%= "Désolé, mais aucun article ne correspond à vos critères de recherche. Veuillez réessayer avec de nouveaux critères." %></p>
+    </div>
+    </div>
+    </div>
+  <% end %>
+  <div class="row">
+    <div class="col-xs-12">
+      <% @articles.each do |article| %>
+        <div class="search">
+          <%= link_to restaurant_article_path(article.restaurant.id, article) do %>
+            <h4 class="text-center"><%= article.restaurant.name %>, <%= article.restaurant.city %></h4>
+          <% end %>
+          <hr>
+          <%= image_tag article.restaurant.picture, class: "picture-search" %>
+          <p><%= article.description.split[0..60].join(" ")%>...</p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

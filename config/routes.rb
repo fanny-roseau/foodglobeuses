@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   resources :contacts, only: [:new, :create]
 
+  resources :articles, only: [:index]
+
   resources :restaurants do
     resources :articles, only: [:show]
     collection do

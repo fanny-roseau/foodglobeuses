@@ -1,6 +1,21 @@
 class ArticlesController < ApplicationController
   before_action :find_article, only: [:show]
 
+  def index
+    @articles = []
+    @search = params[:search]
+    if params[:search] != ""
+      Article.all.each do |article|
+        if (article.restaurant.name).match(/#{params[:search]}/i).to_s.downcase == params[:search].downcase
+          @articles << article
+        end
+        if (article.restaurant.city).match(/#{params[:search]}/i).to_s.downcase == params[:search].downcase
+          @articles << article
+        end
+      end
+    end
+  end
+
   def show
 
     # Let's DYNAMICALLY build the markers for the view.
