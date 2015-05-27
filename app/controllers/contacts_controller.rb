@@ -8,7 +8,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     if @contact.save
       flash[:notice] = "Votre message a bien été envoyé!"
-      redirect_to new_contact_path
+      redirect_to root_path
     else
       render :new
     end
