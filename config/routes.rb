@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   resources :articles, only: [:index]
 
   resources :restaurants do
+    resources :reviews, only: [:create]
     resources :articles, only: [:show]
     collection do
       get 'amsterdam', to: "restaurants#amsterdam"

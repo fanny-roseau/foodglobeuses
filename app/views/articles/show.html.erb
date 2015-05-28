@@ -128,4 +128,38 @@
 
   </div>
 
+  <% if @number_reviews == 1 %>
+    <h2 class="number_comments">1 Commentaire</h2>
+  <% else %>
+    <h2 class="number_comments"><%= @number_reviews %> Commentaires</h2>
+  <% end %>
+
+  <div id="reviews">
+    <% @article.restaurant.reviews.each do |review| %>
+        <% if review.published == "Published" %>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="review">
+                <h4 class="name"><%= review.name %></h4>
+                <span class="date"><%= l(review.created_at, format: :custom).to_s.upcase %> @ <%= review.created_at.strftime("%I:%M:%S").to_s.upcase %></span>
+                <p class="comment"><%= review.comment %></p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+    <% end %>
+  </div>
+
+  <div id="leave_a_review">
+    <h4>Laissez un commentaire</h4>
+    <p>Votre addresse email ainsi que celle de votre site ne seront pas publiés.</p>
+    <%= simple_form_for [@restaurant, @restaurant.reviews.new] do |f| %>
+      <%= f.input :name, label: 'Votre Nom (required)', required: true %>
+      <%= f.input :email, label: 'Votre Email (required)', required: true %>
+      <%= f.input :website, label: 'Votre Site' %>
+      <%= f.input :comment, label: 'Commentaire', :input_html => { :rows =>5} %>
+      <%= f.button :submit, 'POSTER', class: "btn btn-default" %>
+    <% end %>
+  </div>
+
   </div>

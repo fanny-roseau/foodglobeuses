@@ -29,6 +29,6 @@ table.index_table td {
   font-size: 0.8em;
 
   &.ok, &.published, &.complete, &.completed, &.green { background: green; }
-  &.warn, &.warning, &.orange { background: #e29b20; }
+  &.warn, &.warning, &.orange { background: orange; }
   &.error, &.errored, &.red { background: red; }
 }

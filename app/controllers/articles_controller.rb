@@ -14,10 +14,12 @@ class ArticlesController < ApplicationController
         end
       end
     end
+    @articles = @articles.uniq{|article| article.id}
   end
 
   def show
-
+    @restaurant = @article.restaurant
+    @number_reviews = Review.where(restaurant_id: @restaurant, published: "Published").count
     # Let's DYNAMICALLY build the markers for the view.
     @markers = Gmaps4rails.build_markers(@article) do |article, marker|
       marker.lat article.restaurant.latitude
