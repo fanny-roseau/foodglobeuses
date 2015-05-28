@@ -11,7 +11,7 @@ ActiveAdmin.register Review do
       column :published do |review|
         if review.published == "Published"
             status_tag('Published', :ok)
-        elsif review.published == "Pending"
+        elsif review.published == "pending"
           status_tag('Pending', :warn)
         elsif review.published == "Refused"
           status_tag('Refused', :error)
