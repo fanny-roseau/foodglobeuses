@@ -128,8 +128,8 @@
 
   </div>
 
-  <% if @number_reviews == 1 %>
-    <h2 class="number_comments">1 Commentaire</h2>
+  <% if @number_reviews == 1 || @number_reviews == 1 %>
+    <h2 class="number_comments"><%= @number_reviews %> Commentaire</h2>
   <% else %>
     <h2 class="number_comments"><%= @number_reviews %> Commentaires</h2>
   <% end %>
