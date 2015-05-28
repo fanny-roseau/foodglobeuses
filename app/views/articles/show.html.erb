@@ -152,7 +152,7 @@
 
   <div id="leave_a_review">
     <h4>Laissez un commentaire</h4>
-    <p>Votre addresse email ainsi que celle de votre site ne seront pas publiés.</p>
+    <p>Votre addresse email ainsi que celle de votre site ne seront pas publiées.</p>
     <%= simple_form_for [@restaurant, @restaurant.reviews.new] do |f| %>
       <%= f.input :name, label: 'Votre Nom (required)', required: true %>
       <%= f.input :email, label: 'Votre Email (required)', required: true %>
