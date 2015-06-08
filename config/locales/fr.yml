@@ -213,3 +213,11 @@ fr:
       short: "%d %b %Hh%M"
       custom: "%B %e, %Y"
     pm: pm
+
+  articles:
+    show:
+      description: "%{french}"
+      conclusion: "N’oubliez pas les feedback, l’interactivité dans la blogosphère c’est encore mieux!"
+  pages:
+    home:
+      description: "%{french}"

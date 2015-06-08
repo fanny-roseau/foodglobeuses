@@ -5,6 +5,7 @@ index do
     column :id
     column :name
     column :city
+    column :mood
     column :picture
     column :address
     column :opening_hours
@@ -20,6 +21,7 @@ form do |f|
     f.inputs do
       f.input :name
       f.input :city, as: :select, collection: ["Amsterdam", "Barcelone", "Berlin", "Cap-ferret", "Hanoi", "Jérusalem", "Lisbonne", "Londres", "Los Angeles", "Marrakech", "Montreal", "New-York", "Paris", "Piana", "Tel-aviv"]
+      f.input :mood, as: :select, collection: ["brunch", "lunch on the go", "business lunch", "tea time", "apero", "tapas", "trendy casual dinner", "classy dinner", "where to take my date for dinner?"]
       f.input :picture
       f.input :address
       f.input :opening_hours
@@ -28,7 +30,7 @@ form do |f|
     f.actions
   end
 
-permit_params :name, :city, :address, :opening_hours, :phone, :picture
+permit_params :name, :city, :mood, :address, :opening_hours, :phone, :picture
 
 
 end

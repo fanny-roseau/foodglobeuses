@@ -86,3 +86,24 @@ padding-left:0px;
       display:block !important;
   }
 }
+
+    .translation-left {
+      a {
+        padding-left: 15px !important;
+        padding-right: 5px !important;
+      }
+    }
+
+    .translation-right {
+      a {
+        padding-left: 6px !important;
+        padding-right: 30px !important;
+      }
+    }
+
+    .navbar-default .navbar-nav > li {
+      color: #777;
+    }
+
+
+

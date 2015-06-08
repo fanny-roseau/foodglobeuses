@@ -146,7 +146,7 @@
                 <%= link_to restaurant_article_path(article.restaurant.id, article) do %>
                   <h4><%= article.restaurant.name %>, <%= article.restaurant.city %> </h4>
                 <% end %>
-                <p><%= article.description.split[0..60].join(" ")%>...</p>
+                <p><%= t('.description', french: article.description, english: article.description_en).split[0..60].join(" ") %>...</p>
                 <div class="date">
                   <span><%= (l(article.publication, format: :custom)).to_s.capitalize %></span>
                 </div>

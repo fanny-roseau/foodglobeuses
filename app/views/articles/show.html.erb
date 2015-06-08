@@ -58,10 +58,10 @@
     </div>
 
     <p class="text">
-      <%= @article.description %>
+      <%= t('.description', french: @article.description, english: @article.description_en) %>
     </p>
 
-    <p class="text">N’oubliez pas les feedback, l’interactivité dans la blogosphère c’est encore mieux!</p>
+    <p class="text"><%= t('.conclusion')%></p>
 
     <p class="text">M&L</p>
 

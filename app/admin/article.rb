@@ -5,6 +5,7 @@ index do
     column :id
     column :restaurant
     column :description
+    column :description_en
     column :publication
     column :picture1
     column :picture2
@@ -20,6 +21,7 @@ form do |f|
     f.inputs do
       f.input :restaurant
       f.input :description
+      f.input :description_en
       f.input :publication
       f.input :picture1
       f.input :picture2
@@ -30,7 +32,7 @@ form do |f|
     f.actions
   end
 
-permit_params :restaurant_id, :description, :publication, :picture1, :picture2, :picture3, :picture4, :picture5
+permit_params :restaurant_id, :description, :description_en, :publication, :picture1, :picture2, :picture3, :picture4, :picture5
 
 
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150528122554) do
+ActiveRecord::Schema.define(version: 20150608134242) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(version: 20150528122554) do
     t.string   "picture5_content_type"
     t.integer  "picture5_file_size"
     t.datetime "picture5_updated_at"
+    t.text     "description_en"
   end
 
   add_index "articles", ["restaurant_id"], name: "index_articles_on_restaurant_id", using: :btree
@@ -85,6 +86,7 @@ ActiveRecord::Schema.define(version: 20150528122554) do
     t.string   "phone"
     t.float    "latitude"
     t.float    "longitude"
+    t.string   "mood"
   end
 
   create_table "reviews", force: :cascade do |t|

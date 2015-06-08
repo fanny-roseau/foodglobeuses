@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  scope '(:locale)', locale: /fr|en/ do
+
   ActiveAdmin.routes(self)
 
   devise_for :users
@@ -16,6 +18,7 @@ Rails.application.routes.draw do
     resources :reviews, only: [:create]
     resources :articles, only: [:show]
     collection do
+      get 'mood',  to: "restaurants#mood"
       get 'amsterdam', to: "restaurants#amsterdam"
       get 'barcelone', to: "restaurants#barcelone"
       get 'berlin', to: "restaurants#berlin"
@@ -31,6 +34,8 @@ Rails.application.routes.draw do
       get 'paris', to: "restaurants#paris"
       get 'piana', to: "restaurants#piana"
       get 'tel-aviv', to: "restaurants#tel_aviv"
+    end
+
     end
 
   end

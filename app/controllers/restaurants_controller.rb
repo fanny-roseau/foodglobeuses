@@ -1,4 +1,9 @@
 class RestaurantsController < ApplicationController
+
+  def mood
+    @restaurants = Restaurant.where(mood: params[:mood])
+  end
+
   def amsterdam
     @restaurants = Restaurant.where(city: "Amsterdam")
   end
