@@ -227,10 +227,10 @@ fr:
       conclusion: "N’oubliez pas les feedback, l’interactivité dans la blogosphère c’est encore mieux!"
       leaveareview: "Laissez un commentaire"
       publication: "Votre adresse email ainsi que celle de votre site ne seront pas publiées."
-      name: "Votre Nom (required)"
-      email: "Votre Email (required)"
-      website: "Votre Site (required)"
-      review: "Votre Commentaire (required)"
+      name: "Votre Nom (requis)"
+      email: "Votre Email (requis)"
+      website: "Votre Site (requis)"
+      review: "Votre Commentaire (requis)"
       post: "POSTER"
       commentaire: " Commentaire"
       commentaires: " Commentaires"
@@ -272,9 +272,9 @@ fr:
       visite: "Bonne visite et à très vite,"
   contacts:
     new:
-      name: "Votre Nom (required)"
-      email: "Votre Email (required)"
-      subject: "Sujet (required)"
+      name: "Votre Nom (requis)"
+      email: "Votre Email (requis)"
+      subject: "Sujet (requis)"
       message: "Votre Message"
       post: "Envoyer"
 
