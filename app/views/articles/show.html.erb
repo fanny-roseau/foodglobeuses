@@ -129,9 +129,9 @@
   </div>
 
   <% if @number_reviews == 1 || @number_reviews == 0 %>
-    <h2 class="number_comments"><%= @number_reviews %> Commentaire</h2>
+    <h2 class="number_comments"><%= @number_reviews %><%= t('.commentaire') %></h2>
   <% else %>
-    <h2 class="number_comments"><%= @number_reviews %> Commentaires</h2>
+    <h2 class="number_comments"><%= @number_reviews %><%= t('.commentaires') %></h2>
   <% end %>
 
   <div id="reviews">
@@ -151,14 +151,14 @@
   </div>
 
   <div id="leave_a_review">
-    <h4>Laissez un commentaire</h4>
-    <p>Votre adresse email ainsi que celle de votre site ne seront pas publiées.</p>
+    <h4><%= t('.leaveareview') %></h4>
+    <p><%= t('.publication') %></p>
     <%= simple_form_for [@restaurant, @restaurant.reviews.new] do |f| %>
-      <%= f.input :name, label: 'Votre Nom (required)', required: true %>
-      <%= f.input :email, label: 'Votre Email (required)', required: true %>
-      <%= f.input :website, label: 'Votre Site' %>
-      <%= f.input :comment, label: 'Commentaire', :input_html => { :rows =>5} %>
-      <%= f.button :submit, 'POSTER', class: "btn btn-default" %>
+      <%= f.input :name, label: t('.name'), required: true %>
+      <%= f.input :email, label: t('.email'), required: true %>
+      <%= f.input :website, label: t('.website') %>
+      <%= f.input :comment, label: t('.review'), :input_html => { :rows =>5} %>
+      <%= f.button :submit, t('.post'), class: "btn btn-default" %>
     <% end %>
   </div>
 

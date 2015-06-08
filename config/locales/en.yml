@@ -233,10 +233,67 @@ en:
       custom: "%B %e, %Y"
     pm: pm
 
+  layouts:
+    application:
+      followus: "Follow us"
+      presentation: "At a time when foodies are flowing into the blogosphere, it is probably with an impression of « already seen » that you may have landed here. But not so fast buddy, it may be trendy to be a food blogger – but we decided to internationalize the  business. Meaning: we have been travelling all over the world to find you the best places, because the « 8389 restaurants » listed on Trip Advisor are mandating us to make complex and tempestuous choices."
+      search: "Search"
+      about: "About the Food Globeuses"
+      learnmore: "Learn more"
   articles:
     show:
       description: "%{english}"
       conclusion: "Do not hesitate to feedback, interactivity in the blogosphere is always awesome!"
+      leaveareview: "Leave a review"
+      publication: "Your email and your web will not be published."
+      name: "Your Name (required)"
+      email: "Your Email (required)"
+      website: "Your Website (required)"
+      review: "Your Review (required)"
+      post: "POST"
+      commentaire: " Review"
+      commentaires: " Reviews"
+    index:
+      results: "Search for:"
+      empty: "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+      description: "%{english}"
   pages:
     home:
       description: "%{english}"
+    about:
+      about:
+      apropos: "About the Food Globeuses"
+      alheure: "At a time when foodies are flowing into the blogosphere, it is probably with an impression of « already seen » that you may have landed here. But not so fast buddy, it may be trendy to be a food blogger – but we decided to internationalize the business. "
+      traduction: "Meaning"
+      avides: ": we have been travelling all over the world to find you the best places, because the «8389 restaurants» listed on Trip Advisor are mandating us to make complex and tempestuous choices."
+      on: "Having said that, we are not less towards you some perfect unknowns, what, subsequently, "
+      simplifie: "can slow you down to grant us your trust."
+      tache: "Some brief explanations, thus, on the criteria which are ours:"
+      ambiance: "The atmosphere: "
+      cadre: "we like pleasant and trendy places, with artistic decoration, or simply with a good atmosphere. "
+      qualite: "The quality of the food: "
+      adapte: "because the time implies it inevitably, we are keen on Organic Food, but not exclusively and we did not decide to start a war against genetically modified organisms."
+      cibles: "Our targets:"
+      cherches: " we try to find atypical places, if you’re looking for the classics as «Katz Delicatessen» is for New York, buy a tourist guide, it will drive you exactly where you want to go."
+      lesfoodglobeuses: "And who the hell are we?"
+      juristes: ""
+      margot: "Margot, the Photograph: "
+      losangeles: "she is initially Parisian but she moved in Los Angeles almost two years ago, she works as an event coordinator and is keen on "
+      pomme: "« Apple, carrot, ginger juice.  »"
+      denicheuse: ""
+      laura: "Laura, the Writer: "
+      montreal: "after some time spent between Montreal and New York, she lives now in Paris and was recently admitted to the bar exam. Her weakness? A"
+      thevert: "« Green tea with tapioca balls »."
+      veritables: "Real"
+      foodies: "« foodies »,"
+      projet: " the project thus arises from a common desire to deliver our"
+      tips: "« tips »"
+      atravers: "worldwide. You will find here, we hope for it, stuffs to manage some dinners with a good wine and good friends that we let you find without us!"
+      visite: "Enjoy your visit and see you soon,"
+  contacts:
+    new:
+      name: "Your Name (required)"
+      email: "Your Email (required)"
+      subject: "Subject (required)"
+      message: "Your Message"
+      post: "Send"

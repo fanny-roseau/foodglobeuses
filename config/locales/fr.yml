@@ -214,10 +214,72 @@ fr:
       custom: "%B %e, %Y"
     pm: pm
 
+  layouts:
+    application:
+      followus: "Suivez-nous"
+      presentation: "A l’heure où le culinaire afflue dans la blogosphère, c’est avec une impression de déjà vu que tu as du atterrir ici. Mais pas si vite copain, on change un peu la donne en internationalisant la chanson. Traduction : avides de voyages, nous avons parcouru une partie du monde afin de vous dénicher des bonnes adresses, parce que les « 8389 restaurants » répertoriés sur Trip Advisor, ça oblige quand même à faire des choix complexes et tumultueux..."
+      search: "Recherche"
+      about: "A propos des Food Globeuses"
+      learnmore: "En savoir plus"
   articles:
     show:
       description: "%{french}"
       conclusion: "N’oubliez pas les feedback, l’interactivité dans la blogosphère c’est encore mieux!"
+      leaveareview: "Laissez un commentaire"
+      publication: "Votre adresse email ainsi que celle de votre site ne seront pas publiées."
+      name: "Votre Nom (required)"
+      email: "Votre Email (required)"
+      website: "Votre Site (required)"
+      review: "Votre Commentaire (required)"
+      post: "POSTER"
+      commentaire: " Commentaire"
+      commentaires: " Commentaires"
+    index:
+      results: "Résultats de votre recherche pour:"
+      empty: "Désolé, mais aucun article ne correspond à vos critères de recherche. Veuillez réessayer avec de nouveaux critères."
+      description: "%{french}"
   pages:
     home:
       description: "%{french}"
+    about:
+      apropos: "A propos des Food Globeuses"
+      alheure: "A l’heure où le culinaire afflue dans la blogosphère, c’est avec une impression de déjà vu que tu as du atterrir ici. Mais pas si vite copain, on change un peu la donne en internationalisant la chanson."
+      traduction: "Traduction"
+      avides: ": avides de voyages, nous avons parcouru une partie du monde afin de vous dénicher des bonnes adresses, parce que les « 8389 restaurants » répertoriés sur Trip Advisor, ça oblige quand même à faire des choix complexes et tumultueux."
+      on: "On te"
+      simplifie: "simplifie"
+      tache: "la tâche en en choisissant une dizaine par ville. Nos mots d’ordre :"
+      ambiance: "Une ambiance:"
+      cadre: " un cadre agréable, trendy, bobo mais pas trop."
+      qualite: "Une qualité des mets:"
+      adapte: " on s’adapte à notre temps en proposant aussi du vegan sans pour autant entamer une guerre contre les OGM."
+      cibles: "Des cibles atypiques:"
+      cherches: " si tu cherches Katz Delicatessen à New York, achète le guide du routard, il se chargera de te conduire là où tu veux aller."
+      lesfoodglobeuses: "Les Food Globeuses ?"
+      juristes: "Toutes deux juristes de formation."
+      margot: "Margot, La Photographe."
+      losangeles: "Elle a posé ses valises à Los Angeles où elle exerce comme event coordinator et est une inconditionnelle du"
+      pomme: "« pomme, carotte, gingembre »"
+      denicheuse: "mais surtout une dénicheuse hors pair."
+      laura: "Laura, La Plume."
+      montreal: "Après être passée par Montréal et New York, elle est redevenue parisienne où elle est élève avocate et inconditionnelle du "
+      thevert: "« thé vert aux perles de tapioca »."
+      veritables: "Véritables"
+      foodies: "« foodies »"
+      projet: ", le projet nait d’une envie commune de livrer nos "
+      tips: "« tips »"
+      atravers: "à travers le monde. Vous donc trouverez ici, nous l’espérons, de quoi gérer quelques diners avec un bon pinard et des bons copains qu’on vous laisse le soin de trouver."
+      visite: "Bonne visite et à très vite,"
+  contacts:
+    new:
+      name: "Votre Nom (required)"
+      email: "Votre Email (required)"
+      subject: "Sujet (required)"
+      message: "Votre Message"
+      post: "Envoyer"
+
+
+
+
+
+

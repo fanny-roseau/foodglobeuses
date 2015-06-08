@@ -1,11 +1,11 @@
 <div class="col-xs-12 col-md-8">
-  <h3 class="text-center">Résultats de votre recherche pour: <%= @search %></h3>
+  <h3 class="text-center"><%= t('.results')%> <%= @search %></h3>
   <% if @articles.empty? %>
     <div class="row">
     <div class="col-xs-12">
     <div class="empty">
       <hr>
-      <p><%= "Désolé, mais aucun article ne correspond à vos critères de recherche. Veuillez réessayer avec de nouveaux critères." %></p>
+      <p><%= t('.empty')%></p>
     </div>
     </div>
     </div>
@@ -19,7 +19,7 @@
           <% end %>
           <hr>
           <%= image_tag article.restaurant.picture, class: "picture-search" %>
-          <p><%= article.description.split[0..60].join(" ")%>...</p>
+          <p><%= t('.description', french: article.description, english: article.description_en).split[0..60].join(" ") %>...</p>
         </div>
       <% end %>
     </div>
