@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  scope '(:locale)', locale: /fr|en/ do
-
   ActiveAdmin.routes(self)
+
+  scope '(:locale)', locale: /fr|en/ do
 
   devise_for :users
 
