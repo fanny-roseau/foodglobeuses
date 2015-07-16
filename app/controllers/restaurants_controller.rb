@@ -68,4 +68,12 @@ class RestaurantsController < ApplicationController
     @restaurants = Restaurant.where(city: "San Francisco")
   end
 
+   def miami
+    @restaurants = Restaurant.where(city: "Miami")
+  end
+
+   def nouvelle_orleans
+    @restaurants = Restaurant.where(city: "Nouvelle-Orléans")
+  end
+
 end

@@ -20,7 +20,7 @@ index do
 form do |f|
     f.inputs do
       f.input :name
-      f.input :city, as: :select, collection: ["Amsterdam", "Barcelone", "Berlin", "Cap-ferret", "Hanoi", "Jérusalem", "Lisbonne", "Londres", "Los Angeles", "Marrakech", "Montreal", "New-York", "Paris", "Piana", "San Francisco", "Tel-aviv"]
+      f.input :city, as: :select, collection: ["Amsterdam", "Barcelone", "Berlin", "Cap-ferret", "Hanoi", "Jérusalem", "Lisbonne", "Londres", "Los Angeles", "Marrakech", "Miami", "Montreal", "New-York", "Nouvelle-Orléans" "Paris", "Piana", "San Francisco", "Tel-aviv"]
       f.input :mood, as: :select, collection: ["brunch", "lunch on the go", "business lunch", "tea time", "apero", "tapas", "trendy casual dinner", "classy dinner", "where to take my date for dinner?"]
       f.input :picture
       f.input :address
