@@ -37,6 +37,7 @@ Rails.application.routes.draw do
       get 'piana', to: "restaurants#piana"
       get 'tel-aviv', to: "restaurants#tel_aviv"
       get 'san-francisco', to: "restaurants#san_francisco"
+      get 'hawaii', to: "restaurants#hawaii"
     end
 
     end

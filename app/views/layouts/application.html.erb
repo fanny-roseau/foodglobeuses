@@ -39,10 +39,10 @@
               </button>
             </div>
             <ul class="nav navbar-nav navbar-left">
-              <li class="translation-left"><%= link_to "EN", url_for( :locale => 'en' ) %></li>
-              <li>/</li>
-              <li class="translation-right"><%= link_to "FR", url_for( :locale => 'fr' ) %></li>
-              <li role="presentation" class="dropdown">
+                <li><%= link_to "EN", url_for( :locale => 'en' ) %></li>
+                <li>/</li>
+                <li><%= link_to "FR", url_for( :locale => 'fr' ) %></li>
+                <li role="presentation" class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Destinations<span class="caret"></span>
                 </a>
                   <ul class="dropdown-menu" role="menu">
@@ -52,6 +52,7 @@
                     <li><%= link_to "Cap-Ferret", cap_ferret_restaurants_path %></li>
                     <li><%= link_to "Hanoi", hanoi_restaurants_path %></li>
                     <li><%= link_to "Jérusalem", jerusalem_restaurants_path %></li>
+                    <li><%= link_to "Hawaii Islands", hawaii_restaurants_path %></li>
                     <li><%= link_to "Lisbonne", lisbonne_restaurants_path %></li>
                     <li><%= link_to "Londres", londres_restaurants_path %></li>
                     <li><%= link_to "Los Angeles", los_angeles_restaurants_path %></li>

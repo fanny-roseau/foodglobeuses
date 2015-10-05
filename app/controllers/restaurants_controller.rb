@@ -76,4 +76,8 @@ class RestaurantsController < ApplicationController
     @restaurants = Restaurant.where(city: "Nouvelle-Orléans")
   end
 
+  def hawaii
+    @restaurants = Restaurant.where(city: "Hawaii Islands")
+  end
+
 end
