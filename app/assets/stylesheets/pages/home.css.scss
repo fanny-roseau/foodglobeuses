@@ -196,10 +196,12 @@
 
     ul {
       margin-left: -25px;
+      margin-top: 1px;
     }
 
     a {
       color: #777;
+      line-height: 20px;
 
       &:hover {
         color: #fd928c;
