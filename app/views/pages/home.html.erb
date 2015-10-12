@@ -141,7 +141,9 @@
         <% @articles.each do |article| %>
           <div class="post">
             <div class="col-xs-12 col-sm-6">
-              <%= image_tag article.restaurant.picture, class: "picture-post" %>
+              <div>
+                <%= image_tag article.restaurant.picture, class: "picture-post" %>
+              </div>
               <div class="content">
                 <%= link_to restaurant_article_path(article.restaurant.id, article) do %>
                   <h4><%= article.restaurant.name %>, <%= article.restaurant.city %> </h4>
