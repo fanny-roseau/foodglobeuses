@@ -192,6 +192,23 @@
     }
   }
 
+  .translation {
+
+    ul {
+      margin-left: -25px;
+    }
+
+    a {
+      color: #777;
+
+      &:hover {
+        color: #fd928c;
+        text-decoration:none;
+      }
+    }
+
+  }
+
 
 
 

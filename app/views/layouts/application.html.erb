@@ -39,9 +39,13 @@
               </button>
             </div>
             <ul class="nav navbar-nav navbar-left">
-                <li><%= link_to "EN", url_for( :locale => 'en' ) %></li>
-                <li>/</li>
-                <li><%= link_to "FR", url_for( :locale => 'fr' ) %></li>
+              <li role="presentation" class="translation">
+                <ul>
+                  <%= link_to "EN", url_for( :locale => 'en' ) %>
+                  /
+                  <%= link_to "FR", url_for( :locale => 'fr' ) %>
+                </ul>
+              </li>
                 <li role="presentation" class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Destinations<span class="caret"></span>
                 </a>
