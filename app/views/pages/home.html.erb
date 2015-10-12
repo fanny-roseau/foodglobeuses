@@ -141,7 +141,7 @@
         <% @articles.each do |article| %>
           <div class="post">
             <div class="col-xs-12 col-sm-6">
-              <div class="padding-img">
+              <div class="picture-post">
                 <%= image_tag article.restaurant.picture, class: "picture-post" %>
               </div>
               <div class="content">
@@ -154,6 +154,7 @@
                 </div>
               </div>
             </div>
+
           </div>
         <% end %>
         <%= will_paginate @articles, :previous_label => "<<", :next_label => ">>" %>
